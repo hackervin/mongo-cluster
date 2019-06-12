@@ -1,0 +1,12 @@
+How to access mongodb from outside of cluster
+
+1. mongo --host app-name-dev/10.235.112.32:27018,10.235.112.32:27019,10.235.112.32:27020
+ *** app-name-dev -- Replica Name
+
+
+2. add host entry in /etc/host
+
+10.235.112.32 mongodb-primary
+10.235.112.32 mongodb-secondary
+10.235.112.32 mongodb-arbiter
+
